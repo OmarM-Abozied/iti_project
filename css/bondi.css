@@ -83,16 +83,12 @@ img {
 
   nav .image {
     width: 20px;
-    height: 35px;
   }
   nav button span {
     display: none;
   }
   nav button i {
     font-size: 20px !important;
-  }
-  .bell {
-    font-size: 10px;
   }
 }
 
@@ -108,28 +104,28 @@ img {
 
 @media (min-width: 991px) {
   .navbar .navbar-nav .item:hover .ul {
-    display: block ;
+    display: block;
   }
-  .navbar .navbar-nav .item .ul1{
-  list-style: none;
-  top: calc(100% - 10px);
-  left: 200px;
-}
-  .navbar .navbar-nav .item .ul2{
-  list-style: none;
-  top: calc(100% - 10px);
-  left: 300px;
-}
-  .navbar .navbar-nav .item .ul3{
-  list-style: none;
-  top: calc(100% - 10px);
-  left: 400px;
-}
-  .navbar .navbar-nav .item .ul4{
-  list-style: none;
-  top: calc(100% - 10px);
-  right: 600px;
-}
+  .navbar .navbar-nav .item .ul1 {
+    list-style: none;
+    top: calc(100% - 10px);
+    left: 200px;
+  }
+  .navbar .navbar-nav .item .ul2 {
+    list-style: none;
+    top: calc(100% - 10px);
+    left: 300px;
+  }
+  .navbar .navbar-nav .item .ul3 {
+    list-style: none;
+    top: calc(100% - 10px);
+    left: 400px;
+  }
+  .navbar .navbar-nav .item .ul4 {
+    list-style: none;
+    top: calc(100% - 10px);
+    right: 600px;
+  }
 }
 .navbar .bell {
   border-radius: 8px;
@@ -167,6 +163,9 @@ img {
 .navbar .tour .navbar-nav .nav-item:hover {
   background-color: aliceblue;
   border-radius: 5px;
+  color: var(--primary-color) !important;
+}
+.navbar .tour .navbar-nav .nav-item.active a {
   color: var(--primary-color) !important;
 }
 .navbar .bell {

@@ -214,7 +214,7 @@ nav .container {
   min-width: 200px !important;
   flex-shrink: 0 !important;
   margin-right: 5px;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .carousel-indicators .active {
@@ -227,13 +227,23 @@ nav .container {
   height: 0px;
   width: 0px;
 }
-
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+  .bigDiv .carousel-inner {
+    height: 50vh !important;
+  }
   #thumbPrev {
-    top: calc(75% + 0px) !important;
+    top: calc(76% + 8px) !important;
   }
   #thumbNext {
-    top: calc(75% + 0px) !important;
+    top: calc(76% + 8px) !important;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  #thumbPrev {
+    top: calc(83% + 5px) !important;
+  }
+  #thumbNext {
+    top: calc(83% + 5px) !important;
   }
 }
 /* hero */
@@ -450,7 +460,7 @@ footer .end-footer div ul a:hover {
     justify-content: center;
     text-align: center;
   }
-  footer .end-footer .dul{
+  footer .end-footer .dul {
     margin-right: 35px;
   }
 }
