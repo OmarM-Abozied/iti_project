@@ -485,6 +485,7 @@ footer .end-footer div ul a:hover {
   border-style: none;
   font-size: 16px;
   background-color: #5143d9;
+  z-index: 5;
 }
 .up:hover {
   background-color: #4539b8;
