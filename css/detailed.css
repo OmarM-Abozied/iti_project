@@ -229,9 +229,6 @@ nav .container {
 }
 
 @media (max-width: 991px) {
-  .carousel-inner {
-    height: 40vh !important;
-  }
   #thumbPrev {
     top: calc(75% + 0px) !important;
   }
