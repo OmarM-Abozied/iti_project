@@ -202,7 +202,7 @@ nav .container {
 /* End Navbar */
 /* main */
 .hero-wrapper {
-  background: url("/imgs/05.jpg") center/cover no-repeat;
+  background: url("../imgs/05.jpg") center/cover no-repeat;
   padding: 50px 10px 120px; /* padding من تحت لترك مساحة للبوكس */
   border-radius: 20px;
   position: relative;
