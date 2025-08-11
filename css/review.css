@@ -219,6 +219,9 @@ nav .container {
   color: var(--primary-color);
   background-color: #e9ecef;
 }
+.section2 .container div{
+  width: 250px;
+} 
 @media (max-width: 767px) {
   .section2 p {
     display: none !important;
