@@ -211,7 +211,6 @@ nav .container {
 }
 .section2 p {
   color: black;
-  font-size: 15px;
 }
 .section2 div span {
   cursor: pointer;
@@ -220,6 +219,12 @@ nav .container {
   color: var(--primary-color);
   background-color: #e9ecef;
 }
+@media (max-width: 767px) {
+  .section2 p {
+    display: none !important;
+  }
+}
+
 /* section2 */
 /* section3 */
 .section3 h1,
