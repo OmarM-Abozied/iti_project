@@ -82,28 +82,28 @@ nav .container {
 }
 @media (min-width: 991px) {
   .navbar .navbar-nav .item:hover .ul {
-    display: block ;
+    display: block;
   }
-  .navbar .navbar-nav .item .ul1{
-  list-style: none;
-  top: calc(100% - 10px);
-  left: 450px;
-}
-  .navbar .navbar-nav .item .ul2{
-  list-style: none;
-  top: calc(100% - 10px);
-  left: 550px;
-}
-  .navbar .navbar-nav .item .ul3{
-  list-style: none;
-  top: calc(100% - 10px);
-  left: 650px;
-}
-  .navbar .navbar-nav .item .ul4{
-  list-style: none;
-  top: calc(100% - 10px);
-  right: 400px;
-}
+  .navbar .navbar-nav .item .ul1 {
+    list-style: none;
+    top: calc(100% - 10px);
+    left: 450px;
+  }
+  .navbar .navbar-nav .item .ul2 {
+    list-style: none;
+    top: calc(100% - 10px);
+    left: 550px;
+  }
+  .navbar .navbar-nav .item .ul3 {
+    list-style: none;
+    top: calc(100% - 10px);
+    left: 650px;
+  }
+  .navbar .navbar-nav .item .ul4 {
+    list-style: none;
+    top: calc(100% - 10px);
+    right: 400px;
+  }
 }
 .navbar .nav-link {
   color: black;
@@ -201,23 +201,42 @@ nav .container {
 
 /* End Navbar */
 /* hero */
+.carousel-indicators {
+  padding: 10px;
+  max-height: 400px;
+  max-width: 100%;
+  padding-left: 300px;
+}
 
 .carousel-indicators [data-bs-target] {
   height: 100px !important;
-  width: 450px !important;
   opacity: 1;
+  min-width: 200px !important;
+  flex-shrink: 0 !important;
+  margin-right: 5px;
+  border-radius: 8px;
 }
 
 .carousel-indicators .active {
   border: 5px var(--primary-color) solid;
 }
-
-.carousel-indicators::-webkit-scrollbar {
+.carousel-indicators:-webkit-scrollbar {
   height: 0px;
 }
+.bigCorsor::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
 @media (max-width: 991px) {
   .carousel-inner {
     height: 40vh !important;
+  }
+  #thumbPrev {
+    top: calc(75% + 0px) !important;
+  }
+  #thumbNext {
+    top: calc(75% + 0px) !important;
   }
 }
 /* hero */
@@ -312,14 +331,15 @@ footer .container {
 footer .top-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 5px;
-  padding: 3em;
+  padding: 3em 0;
   background: var(--bt-color);
 }
 footer .top-footer div h4 {
-  text-align: center;
+  padding-bottom: 10px;
 }
+
 footer .top-footer div,
 h4,
 ul,
@@ -343,7 +363,7 @@ footer .top-footer div ul a:hover {
 /* md footer */
 
 footer .md-footer {
-  padding: 1em;
+  padding: 1em 0;
   background: var(--bt-color);
   color: #c0c6cc;
 }
@@ -427,7 +447,16 @@ footer .end-footer div ul a {
 footer .end-footer div ul a:hover {
   color: #8e85e6;
 }
-
+@media (max-width: 991px) {
+  footer .end-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  footer .end-footer .dul{
+    margin-right: 35px;
+  }
+}
 .top-btn {
   position: fixed;
   bottom: 20px;
